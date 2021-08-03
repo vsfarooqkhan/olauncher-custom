@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    tools:context=".ui.HomeFragment">
+
+    <!-- Placeholder layout for locking screen-->
+    <FrameLayout
+        android:id="@+id/lock"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:contentDescription="@string/lock_layout_description" />
+
+    <!-- Clock and calendar-->
+    <LinearLayout
+
+        android:id="@+id/dateTimeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextClock
+            android:id="@+id/clock"
+            style="@style/TextDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:format12Hour="hh:mm a"
+            android:textSize="@dimen/time_size" />
+
+        <TextClock
+            android:id="@+id/date"
+            style="@style/TextDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:format12Hour="dd-mm-yyyy"
+            android:format24Hour="dd-mm-yyyy"
+            android:letterSpacing="0.02"
+            android:textSize="@dimen/date_size" />
+        <TextView
+            android:id="@+id/angry_btn"
+
+            android:text="Farooq Khan"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#000"
+
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            />
+
+    </LinearLayout>
+
+    <!-- Home apps-->
+    <LinearLayout
+        android:id="@+id/homeAppsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/homeApp1"
+            style="@style/TextLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/app"
+            android:paddingVertical="@dimen/home_app_padding_vertical"
+            android:tag="@string/_1"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/homeApp2"
+            style="@style/TextLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/app"
+            android:paddingVertical="@dimen/home_app_padding_vertical"
+            android:tag="@string/_2"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/homeApp3"
+            style="@style/TextLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/app"
+            android:paddingVertical="@dimen/home_app_padding_vertical"
+            android:tag="@string/_3"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/homeApp4"
+            style="@style/TextLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/app"
+            android:paddingVertical="@dimen/home_app_padding_vertical"
+            android:tag="@string/_4"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/homeApp5"
+            style="@style/TextLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/app"
+            android:paddingVertical="@dimen/home_app_padding_vertical"
+            android:tag="@string/_5"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/homeApp6"
+            style="@style/TextLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/app"
+            android:paddingVertical="@dimen/home_app_padding_vertical"
+            android:tag="@string/_6"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/homeApp7"
+            style="@style/TextLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/app"
+            android:paddingVertical="@dimen/home_app_padding_vertical"
+            android:tag="@string/_7"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/homeApp8"
+            style="@style/TextLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/app"
+            android:paddingVertical="@dimen/home_app_padding_vertical"
+            android:tag="@string/_8"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!-- First run tips -->
+    <LinearLayout
+        android:id="@+id/firstRunTips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="56dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/TextSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="@string/swipe_up_for_apps" />
+
+        <TextView
+            style="@style/TextSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/long_press_for_settings" />
+
+    </LinearLayout>
+
+    <!-- Set default launcher -->
+    <TextView
+        android:id="@+id/setDefaultLauncher"
+        style="@style/TextSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="56dp"
+        android:text="@string/set_as_default_launcher"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/quote_btn"
+
+        android:text="You Only Live Once"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="240dp"
+        android:layout_marginBottom="7dp"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+
+
+</FrameLayout>
